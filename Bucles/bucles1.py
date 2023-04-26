@@ -10,4 +10,4 @@ while i<=5:
     sum=sum+i 
     i+=1 #Se incrementa en uno
 
-print(f'la suma es ={sum}')
+print(f'La suma es: {sum}')
