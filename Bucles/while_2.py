@@ -6,7 +6,7 @@ num = int(input("Ingrese un número: "))
 i = 1
 
 while i <= num:
-    if i % 7 == 0: #Verificar cuales numeros son multiplos de 3.
+    if i % 7 == 0: #Verificar cuales numeros son multiplos de 7.
         print(i, "Es múltiplo de 7")
     else:
         print(i)
