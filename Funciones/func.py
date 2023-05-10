@@ -16,10 +16,11 @@ def promedioLista(lista):
     return sumaLista (lista)/len(lista)
 
 def mayor(lista1):
+    maximo = lista1[0]
     for x in lista1:
-        if x>mayor:
-            mayor=x
-    return mayor
+        if x > maximo:
+            maximo = x
+    return maximo
 
 print(lista1)
 print(f'La suma de la lista es: {sumaLista(lista1)}')
