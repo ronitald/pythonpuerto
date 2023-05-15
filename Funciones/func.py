@@ -29,9 +29,26 @@ def menor(lista1):
             minimo = x
     return minimo
 
+def ordenasc(lista1):
+    for i in range(len(lista1) - 1):
+        for j in range(i + 1, len(lista1)):
+            if lista1[i] > lista1[j]:
+                lista1[i], lista1[j] = lista1[j], lista1[i]
+    return lista1
+
+def ordendes(lista1):
+    for i in range(len(lista1) - 1):
+        for j in range(i + 1, len(lista1)):
+            if lista1[i] < lista1[j]:
+                lista1[i], lista1[j] = lista1[j], lista1[i]
+    return lista1
+
+print()
 print(lista1)
 print(f'La suma de la lista es: {sumaLista(lista1)}')
 print(f'El promedio es: {promedioLista(lista1)}')
 print(f'El numero mayor es: {mayor(lista1)}')
 print(f'El numero menor es: {menor(lista1)}')
-print(f'El orden ascendete de la lista es: {(lista1)}')
+print(f'El orden ascendete de la lista es: {ordenasc(lista1)}')
+print(f'El orden descendente de la lista es: {ordendes(lista1)}')
+print()
