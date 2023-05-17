@@ -29,19 +29,19 @@ def menor(lista):
             minimo = x
     return minimo
 
-def ordenasc(lista):
-    for i in range(len(lista)-1):
-        for j in range(i+1, len(lista)):
-            if lista[i]>lista[j]:
-                lista[i],lista[j]=lista[j],lista[i]
-    return lista
+def ordenasc(lista1):
+    for i in range(len(lista1) - 1):
+        for j in range(i + 1, len(lista1)):
+            if lista1[i] > lista1[j]:
+                lista1[i], lista1[j] = lista1[j], lista1[i]
+    return lista1
 
-def ordendes(lista):
-    for i in range(len(lista)-1):
-        for j in range(i+1, len(lista)):
-            if lista[i]<lista[j]:
-                lista[i], lista[j]=lista[j], lista[i]
-    return lista
+def ordendes(lista1):
+    for i in range(len(lista1) - 1):
+        for j in range(i + 1, len(lista1)):
+            if lista1[i] < lista1[j]:
+                lista1[i], lista1[j] = lista1[j], lista1[i]
+    return lista1
 
 print()
 print(lista1)
