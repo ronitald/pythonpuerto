@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Diccionarios",
+        "./Paquete_Proyecto/PaqueteLista"
+    ]
+}
