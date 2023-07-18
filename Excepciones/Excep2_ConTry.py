@@ -16,6 +16,6 @@ while True:
     except ValueError:
         print('¡Valor invalido! Ingrese un valor numerico.')
     except ZeroDivisionError:
-        print("El valor de 'A' no puede ser cero. \n Por que la funcion no seria cuadratica.")
+        print("El valor de 'A' no puede ser cero.")
     except:
-        print('Oooh algo ha salido mal.')
+        print('Ah ocurrido un error.')

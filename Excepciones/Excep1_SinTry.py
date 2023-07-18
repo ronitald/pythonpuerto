@@ -7,5 +7,4 @@ while True:
         print(f'El resultado de la división es {resultado}')
     else:
         print('No se puede dividir entre 0. Intenta de nuevo.')
-    print('--- FIN ---')
     print()
