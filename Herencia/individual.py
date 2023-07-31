@@ -2,8 +2,8 @@ from Cliente import *
 
 class Individual(Cliente):
     def __init__(self, nombre, id_cliente, apellido, email, numeroCel):
-        Cliente.__init__(self, nombre, id_cliente)
-        self.__apellido  = apellido
+        super().__init__(nombre, id_cliente)
+        self.__apellido = apellido
         self.__email = email
         self.__numCel = numeroCel
 
@@ -13,7 +13,7 @@ class Individual(Cliente):
     def getEmail(self):
         return self.__email
     
-    def getnumCel(self):
+    def getNumCel(self):
         return self.__numCel
     
     def setApellido(self, apellido):
@@ -22,5 +22,5 @@ class Individual(Cliente):
     def setEmail(self, email):
         self.__email = email
 
-    def setnumCel(self, numCel):
+    def setNumCel(self, numCel):
         self.__numCel = numCel

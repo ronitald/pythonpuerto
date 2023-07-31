@@ -1,8 +1,8 @@
 from Cliente import *
 
 class Empresa(Cliente):
-    def __init__(self, nombre, id_cliente,numCel):
-        Cliente.__init__(self, nombre, id_cliente)
+    def __init__(self, nombre, id_cliente, numCel):
+        super().__init__(nombre, id_cliente)
         self.__numCel = numCel
 
     def getNumCel(self):

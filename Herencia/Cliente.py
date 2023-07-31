@@ -1,10 +1,11 @@
-from producto import *
+from producto import Producto
 
 class Cliente:
     def __init__(self, nombre, id_cliente):
         self.__nombre = nombre
         self.__idCliente = id_cliente
         self.__productos = []
+        self.__precio = 0
 
     def getId(self):
         return self.__idCliente
@@ -23,6 +24,7 @@ class Cliente:
 
     def agregarProducto(self, producto):
         self.__productos.append(producto)
+        self.__precio += producto.getPrecio()
 
     def __str__(self):
         return self.__productos
@@ -32,5 +34,4 @@ class Cliente:
     
     def componerProducto(self, id, nombre, precio):
         productoUno = Producto(id, nombre, precio)
-        self.__productos.append(productoUno)
-        
+        self.agregarProducto(productoUno)

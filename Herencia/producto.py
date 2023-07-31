@@ -1,5 +1,3 @@
-
-
 class Producto:
     def __init__(self, idProducto, nombre, tipo):
         self.__idProducto = idProducto
@@ -18,8 +16,8 @@ class Producto:
     def getTipo(self):
         return self.__tipo
     
-    def setidProducto(self, producto):
-        self.__idProducto = producto
+    def setidProducto(self, idProducto):
+        self.__idProducto = idProducto
 
     def setNombre(self, nombre):
         self.__nombre = nombre
